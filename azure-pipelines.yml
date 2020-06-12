@@ -9,7 +9,7 @@ trigger:
 pool:
   vmImage: 'windows-latest'
   demands:
-    - npm
+    - npm 
       
 variables:
   solution: '**/*.sln'
@@ -47,3 +47,4 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   condition: succeeded()
+  
